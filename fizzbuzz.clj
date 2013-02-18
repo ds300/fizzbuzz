@@ -1,4 +1,4 @@
-(doseq [n (rest (range 101))]
+(doseq [n (range 1 101)]
   (println
     (condp #(= 0 (mod %2 %1)) n
       15 "fizzbuzz"
